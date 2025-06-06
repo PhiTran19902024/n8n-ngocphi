@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    repo: https://github.com/PhiTran19902024/n8n-ngocphi.git
+    dockerfilePath: Dockerfile
+    region: oregon
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: admin123
